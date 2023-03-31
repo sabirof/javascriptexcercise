@@ -66,7 +66,6 @@
 // }
 //Exercise 8
 //Write a function that receives an array as a parameter and prints the lowest number in the array to the console. Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the lowest number in the array printed in the console. If not, investigate and fix it.
-//const numbers = [1, 4, 8, 2, 10, 3, 2];
 
 // function findLowestNumber(arr) {
 //   let lowest = arr[0];
@@ -78,7 +77,7 @@
 //   console.log("lowest number:", lowest);
 // }
 // findLowestNumber(numbers);
-
+const numbers = [1, 4, 8, 2, 10, 3, 2];
 //exercise 9
 
 // function findBiggestNumber(arr) {
@@ -90,7 +89,7 @@
 //   }
 //   console.log("biggest number:", biggest);
 // }
-// const numbers = [1, 4, 8, 2, 10, 3, 2];
+// // const numbers = [1, 4, 8, 2, 10, 3, 2];
 // findBiggestNumber(numbers);
 
 //Excercise 10
@@ -118,19 +117,19 @@
 
 // Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see an array of the repeated numbers printed in the console. If not, investigate and fix it.
 
-// // console.log(array.filter((a, b, c) => c.indexOf(a) !== b));
+// console.log(array.filter((a, b, c) => c.indexOf(a) !== b));
 
-// // function testing(array, array2) {
-// //   for (let i = 0; i < array.length; i++) {
-// //     console.log("oulterLoop", array[i]);
-// //     for (let b = 0; b < array2.length; b++) {
-// //       console.log("innerLoop", array2[b]);
-// //     }
-// //   }
-// // }
-// // let nums = [1, 2, 3, 4, 5];
-// // let letters = ["a", "b", "c", "d", "e"];
-// // testing(nums, letters);
+// function testing(array, array2) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log("oulterLoop", array[i]);
+//     for (let b = 0; b < array2.length; b++) {
+//       console.log("innerLoop", array2[b]);
+//     }
+//   }
+// }
+// let nums = [1, 2, 3, 4, 5];
+// let letters = ["a", "b", "c", "d", "e"];
+// testing(nums, letters);
 
 // function printDuplicates(array) {
 //   var duplicates = {};
@@ -275,20 +274,70 @@
 //   }
 // }
 
-// console.log(triangleType(3, 3, 5));
-// console.log(triangleType(5, 5, 5));
-// console.log(triangleType(4, 5, 7));
+console.log(triangleType(3, 3, 5));
+console.log(triangleType(5, 5, 5));
+console.log(triangleType(4, 5, 7));
 
 //Excercise 23
-function replaceAwith1(charArray) {
-  for (let i = 0; i < charArray.length; i++) {
-    if (charArray[i] === "a")
-      //if the character is equal to a  {
-      charArray[i] = "1";
-  }
-  return charArray.join(""); //After the loop has finished iterating through all characters in the array, the function returns the modified array as a string. The join method is used to concatenate all elements of the array into a single string, using an empty string as the separator.
-}
+// function replaceAwith1(charArray) {
+//   for (let i = 0; i < charArray.length; i++) {
+//     if (charArray[i] === "a")
+//if the character is equal to a  {
+//       charArray[i] = "1";
+//   }
+//   return charArray.join(""); //After the loop has finished iterating through all characters in the array, the function returns the modified array as a string. The join method is used to concatenate all elements of the array into a single string, using an empty string as the separator.
+// }
 
-const input = ["J", "a", "v", "a", "s", "c", "r", "i", "p", "t"];
-const output = replaceAwith1(input);
-console.log(output);
+// const input = ["J", "a", "v", "a", "s", "c", "r", "i", "p", "t"];
+// const output = replaceAwith1(input);
+// console.log(output);
+
+//Excercise 24
+// function sumArray(arr) {
+//   /*
+//    * Returns the sum of all elements in the given array.
+//    */
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+
+// function findSmallest(arr) {
+//   /*
+//    * Returns the smallest number in the given array.
+//    */
+//   let smallest = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < smallest) {
+//       smallest = arr[i];
+//     }
+//   }
+//   return smallest;
+// }
+
+// // Example usage
+// let arr = [5, 3, 8, 2, 9, 1];
+// console.log("Sum of array:", sumArray(arr));
+// console.log("Smallest number in array:", findSmallest(arr));
+
+//Excercise 25
+
+// function sumEvenNumbers(arr) {
+//   /*
+    * Adds up all the even numbers in the given array and returns the result.
+    */
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       sum += arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// Example usage
+// let arr = [1, 2, 8, 3, 2];
+// let sumOfEvens = sumEvenNumbers(arr);
+// console.log("Sum of even numbers in array:", sumOfEvens);
