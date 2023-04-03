@@ -341,3 +341,26 @@ console.log(triangleType(4, 5, 7));
 // let arr = [1, 2, 8, 3, 2];
 // let sumOfEvens = sumEvenNumbers(arr);
 // console.log("Sum of even numbers in array:", sumOfEvens);
+ 
+
+//excercise 26
+// function sumEvenPositions(arr) {
+//   let sum = 0;
+//   for (let i = 1; i < arr.length; i += 2) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+// const arr = [1, 2, 8, 3, 2, 3, 4];
+// const result = sumEvenPositions(arr);
+// console.log(result); // Output: 14
+
+//Excercise 27
+// function printEvenNumbers(num) {
+//   for (let i = 2; i < num; i += 2) {
+//     console.log(i);
+//   }
+// }
+// printEvenNumbers(9);
+
+
