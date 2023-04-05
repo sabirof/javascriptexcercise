@@ -274,9 +274,9 @@ const numbers = [1, 4, 8, 2, 10, 3, 2];
 //   }
 // }
 
-console.log(triangleType(3, 3, 5));
-console.log(triangleType(5, 5, 5));
-console.log(triangleType(4, 5, 7));
+// console.log(triangleType(3, 3, 5));
+// console.log(triangleType(5, 5, 5));
+// console.log(triangleType(4, 5, 7));
 
 //Excercise 23
 // function replaceAwith1(charArray) {
